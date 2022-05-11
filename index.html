@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hala</title>
+    <script src="index.js"></script>
+
+</head>
+<body onkeydown="diChuyen()">
+<img src="https://th.bing.com/th/id/OIP.zVwEMB6yC_T2P-hhY-OjTgHaFj?w=229&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="" id="dog" style="left : 0; top : 0 ; position: absolute" >
+<!--<br>-->
+<!--<button onclick="sangPhai()">click</button>-->
+<script>
+    // function sangPhai() {
+    //     let image = document.getElementById('dog');
+    //     image.style.left = parseInt(image.style.left) + 10 + 'px';
+    // }
+    function diChuyen() {
+        switch (event.keyCode) {
+            case 37 : {
+                let image = document.getElementById('dog');
+                image.style.left = parseInt(image.style.left) -10 + 'px';
+                break;
+            }
+            case 39 : {
+                let image = document.getElementById('dog');
+                image.style.left = parseInt(image.style.left) + 10 + 'px';
+                break;
+            }
+            case 38 : {
+                let image = document.getElementById('dog');
+                image.style.top = parseInt(image.style.top) - 10 +'px';
+                break;
+            }
+            case 40 : {
+                let image = document.getElementById('dog');
+                image.style.top = parseInt(image.style.top) + 10 + 'px';
+                break;
+            }
+        }
+    }
+
+</script>
+</body>
